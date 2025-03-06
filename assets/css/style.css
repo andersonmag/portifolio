@@ -139,7 +139,6 @@ body {
     bottom: 10px;
     width: 40px;
     transform: rotate(90deg);
-
 }
 
 .resume .resume__icon:hover {
@@ -153,7 +152,7 @@ body {
 
 .general__section {
     display: flex;
-    padding: 80px 450px;
+    padding: 60px 450px;
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 100px;
@@ -215,11 +214,19 @@ body {
 .general__section .general__section__social {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    gap: 5px;
 }
 
 .general__section .general__section__social div {
     display: flex;
     align-items: center;
+    color: var(--primary-color);
+}
+
+.general__section .general__section__social div span {
+    color: var(--light-color);
+    padding-left: 10px;
 }
 
 .general__section .general__section__social div a {
@@ -238,7 +245,31 @@ body {
 
 footer {
     background-color: var(--secondary-color);
-    color: var(--text-third-color);
+    color: var(--light-color);
     text-align: center;
     padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+textarea {
+    padding: 5px;
+}
+
+footer .resume__icon {
+    background-color: var(--light-color);
+    border-radius: 50%;
+    width: 40px;
+    transform: rotate(-90deg);
+}
+
+footer .resume__icon:hover {
+    transform: rotate(-90deg) scale(1.1);
+    transition: filter 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
 }
