@@ -6,9 +6,11 @@
 
 :root {
     --primary-color: #007bff;
-    --secondary-color: #6c757d;
+    --secondary-color: #1b212b;
     --info-color: #17a2b8;
     --light-color: #f5f5f5;
+    --text-secondary-color: #d9d9d9;
+    --text-third-color: #343434;
     --dark-color: #343a40;
     --font-default: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, Helvetica Neue;
 }
@@ -25,6 +27,8 @@ body {
 .container {
     margin: 0 auto;
 }
+
+/* Resume */
 
 .resume {
     display: flex;
@@ -71,6 +75,7 @@ body {
 }
 
 .resume__links__link {
+    text-decoration: none;
     display: inline-block;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -106,11 +111,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.resume .resume__buttons__button:hover {
+.resume__buttons__button:hover {
     background-color: var(--dark-color);
 }
 
-.resume .resume__buttons__button {
+.resume__buttons__button {
     color: var(--light-color);
     display: flex;
     align-items: center;
@@ -143,17 +148,97 @@ body {
     cursor: pointer;
 }
 
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+
+/* About me */
+
+.general__section {
+    display: flex;
+    padding: 80px 450px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 100px;
+    color: var(--text-third-color);
 }
 
-@keyframes blink {
-    50% {
-        border-color: transparent;
-    }
+.section-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.about__me {
+    background-color: var(--secondary-color);
+    color: var(--text-secondary-color);
+}
+
+.general__section .general__section__title {
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.general__section .my__photo {
+    width: 120px;
+    border-radius: 12px;
+}
+
+.general__section .general__section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.general__section .general__section__content__description {
+    margin-top: 25px;
+}
+
+.horizonal__line {
+    width: 50%;
+    margin: 0 450px;
+}
+
+.general__section .skills__logo img {
+    cursor: pointer;
+}
+
+.general__section .skills__logo img:hover {
+    transition: filter 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.general__section .general__section__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.general__section .general__section__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.general__section .general__section__social div {
+    display: flex;
+    align-items: center;
+}
+
+.general__section .general__section__social div a {
+    display: flex;
+    align-items: center;
+    color: var(--text-third-color);
+}
+
+.general__section .general__section__social div img {
+    filter: brightness(0) invert(1);
+}
+
+.general__section .general__section__social div a svg {
+    fill: var(--light-color)
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--text-third-color);
+    text-align: center;
+    padding-bottom: 20px;
 }
