@@ -1,3 +1,5 @@
+@import url("responsive.css");
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,6 @@
 :root {
     --primary-color: #007bff;
     --secondary-color: #1b212b;
-    --info-color: #17a2b8;
     --light-color: #f5f5f5;
     --text-secondary-color: #d9d9d9;
     --text-third-color: #343434;
@@ -17,6 +18,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -156,7 +158,7 @@ body {
 
 .general__section {
     display: flex;
-    padding: 60px 450px;
+    padding: 60px max(5vw, 450px);
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 100px;
@@ -197,7 +199,7 @@ body {
 
 .horizonal__line {
     width: 50%;
-    margin: 0 450px;
+    margin: 0 max(5vw, 450px);
 }
 
 .general__section .skills__logo img {
@@ -207,6 +209,13 @@ body {
 .general__section .skills__logo img:hover {
     transition: filter 0.3s ease-in-out, transform 0.2s ease-in-out;
     transform: scale(1.1);
+}
+
+.general__section .general__section__contact__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px
 }
 
 .general__section .general__section__contact {
@@ -245,6 +254,15 @@ body {
 
 .general__section .general__section__social div a svg {
     fill: var(--light-color)
+}
+
+.center {
+    display: flex;
+    justify-content: center
+}
+
+.light-color {
+    color: var(--light-color);
 }
 
 footer {

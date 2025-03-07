@@ -1,0 +1,94 @@
+@media (min-width: 1500px) and (max-width: 1625px) {
+    .general__section {
+        padding: 60px 360px !important;
+    }
+
+    .horizonal__line {
+        margin: 0 360px !important;
+    }
+}
+
+@media (min-width: 1380px) and (max-width: 1499px) {
+    .general__section {
+        padding: 60px 300px !important;
+    }
+
+    .horizonal__line {
+        margin: 0 300px !important;;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1377px) {
+    .general__section {
+        padding: 60px 200px !important;
+    }
+
+    .horizonal__line {
+        margin: 0 200px !important;
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1099px) {
+    .general__section {
+        padding: 60px 100px !important;
+    }
+
+    .horizonal__line {
+        margin: 0 100px !important;;
+        width: 70% !important;
+    }
+}
+
+@media (min-width: 780px) and (max-width: 899px) {
+    .general__section {
+        padding: 60px 50px !important;
+    }
+
+    .horizonal__line {
+        margin: 0 50px;
+    !important;
+        width: 70% !important;
+    }
+}
+
+@media screen and (max-width: 779px) {
+    .resume .resume__title {
+        font-size: 2rem !important;
+    }
+
+    .general__section {
+        padding: 20px max(5vw, 30px) !important;
+        display: inline-block !important;
+    }
+
+    .horizonal__line {
+        margin: 0 max(5vw, 30px) !important;
+        width: 70% !important;
+    }
+
+    .general__section__title {
+        margin-bottom: 10px;
+    }
+
+    .general__section .my__photo {
+        width: 150px !important;
+        display: flex;
+        margin: 5px auto !important;
+    }
+
+    .general__section .general__section__social {
+        margin-top: 20px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input {
+        width: 600px !important;
+    }
+
+}
