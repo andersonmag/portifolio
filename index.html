@@ -193,10 +193,10 @@
                 <h3 class="light-color">Get in Touch.</h3>
             </div>
 
-            <form id="contact-form" class="general__section__contact">
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Message" rows="6" cols="45"></textarea>
+            <form id="contact-form" class="general__section__contact" method="post">
+                <input required type="text" placeholder="Name" name="name">
+                <input required type="email" placeholder="Email" name="email">
+                <textarea required placeholder="Message" rows="6" cols="45" name="message"></textarea>
 
                 <button class="resume__buttons__button center" type="submit">
                     Send Message

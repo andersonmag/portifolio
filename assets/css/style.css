@@ -295,3 +295,8 @@ footer .resume__icon:hover {
     transition: filter 0.3s ease-in-out, transform 0.2s ease-in-out;
     cursor: pointer;
 }
+
+#status {
+    color: var(--primary-color);
+    padding-top: 10px;
+}
