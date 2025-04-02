@@ -1,4 +1,4 @@
-# portifolio
-Meu portifolio desenvolvido com HTML,  CSS e Javascript
+# Portfolio
+My portfolio developed with HTML, CSS and Javascript
 <br/>
-Disponível em https://portifolio-anderson-delmondes.vercel.app/
+Available on https://portifolio-anderson-delmondes.vercel.app/
